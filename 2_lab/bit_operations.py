@@ -22,10 +22,7 @@ def pobit_task_7(z: int = 0b1111011):
 def pobit_task_15(z: int = 174):
     print('\npobit_task_15')
     print(z, bin(z))
-    count_of_bits = 0
-    while z > 0:
-        count_of_bits += 1
-        z >>= 1
+    count_of_bits = len(str(bin(z))) - 2
     print('count of bits', count_of_bits)
 
 def main():
